@@ -1,3 +1,4 @@
+// ---------- SEARCH DATA ----------
 const animeList = [
   { name: "86 Eighty-Six", link: "anime/86-Eighty-Six.html" }
 ];
@@ -18,6 +19,22 @@ function searchAnime() {
 
       li.appendChild(a);
       results.appendChild(li);
+    }
+  });
+}
+
+// ---------- GENRE FILTER ----------
+function filterAnime() {
+  let selected = document.getElementById("genreFilter").value;
+  let items = document.querySelectorAll("#animeList li");
+
+  items.forEach(item => {
+    let genres = item.getAttribute("data-genre");
+
+    if (selected === "all" || genres.includes(selected)) {
+      item.style.display = "list-item";
+    } else {
+      item.style.display = "none";
     }
   });
 }

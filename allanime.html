@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Anime - NextAnime</title>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="top-anime.html">Top Anime</a> |
+  <a href="all-anime.html">All Anime</a>
+</nav>
+
+<hr>
+
+<h1>All Anime</h1>
+
+<p>Filter by genre:</p>
+
+<select id="genreFilter" onchange="filterAnime()">
+  <option value="all">All</option>
+  <option value="action">Action</option>
+  <option value="drama">Drama</option>
+  <option value="scifi">Sci-Fi</option>
+  <option value="thriller">Thriller</option>
+</select>
+
+<ul id="animeList">
+
+  <li data-genre="action drama">
+    <a href="anime/attack-on-titan.html">Attack on Titan</a>
+  </li>
+
+  <li data-genre="scifi drama">
+    <a href="anime/86-Eighty-Six.html">86 Eighty-Six</a>
+  </li>
+
+</ul>
+<!-- Link external JS -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
