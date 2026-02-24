@@ -19,9 +19,16 @@
   <p>Use the site to quickly find anime and see if they are right for you.</p>
 
   <input 
-  type="text" 
+  type="text"
+  id="searchInput"
   placeholder="Search anime..."
+  onkeyup="searchAnime()"
 >
+
+<ul id="results"></ul>
+
+<!-- Link external JS -->
+<script src="assets/js/script.js"></script>
   
 </body>
 </html>
