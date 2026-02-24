@@ -1,6 +1,7 @@
 // ---------- SEARCH DATA ----------
 const animeList = [
-  { name: "86 Eighty-Six", link: "anime/86-Eighty-Six.html" }
+  { name: "86 Eighty-Six", link: "anime/86-Eighty-Six.html" },
+  { name: "I Left My A-Rank Party to Help My Former Students Reach the Dungeon Depths!", link: "anime/a-rank-party.html" }
 ];
 
 function searchAnime() {
